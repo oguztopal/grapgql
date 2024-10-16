@@ -1,0 +1,11 @@
+type Query {
+    getMovieById(id: ID!): Movie
+    allMovies: [Movie]
+}
+
+type Movie {
+    id: ID!
+    title: String!
+    director: String!
+    releaseYear: Int!
+}
